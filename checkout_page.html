@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head><meta charset="utf-8">
+        <title>Checkout Page</title>
+        <link href="css/main.css" rel="stylesheet">
+
+        <!--Manrope font @ https://fonts.google.com/specimen/Manrope-->
+        <!--Montserrat font @ https://fonts.google.com/specimen/Montserrat-->
+        <!--Open sans font @ https://fonts.google.com/specimen/Open+Sans-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a href="index.html" class="button-nav">Index</a>
+                <a href="product_page.html" class="button-nav">Product Listing</a>
+                <a href="checkout_page.html" class="button-nav">Checkout</a>
+            </nav>
+
+            <h1>Checkout</h1>
+        </header>
+
+        <section class="element">
+            <div class="checkout">
+                <div class="cart">
+                    <h3>Cart</h3><br>
+                    <div class="cart-header">
+                        <h4 class="cart-header-item">Item</h4>
+                        <h4 class="cart-header-item">Quantity</h4>
+                        <h4 class="cart-header-item">Price</h4>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="cart-object">
+                            <a href="#" class="text-link"><h4>Doom Eternal</h4></a>
+                        </div>
+                        <div class="cart-quantity">
+                            <p>x1</p>
+                        </div>
+
+                        <div class="cart-price">
+                            <p>$4.99</p>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="cart-object">
+                            <a href="#" class="text-link"><h4>Pokémon Legends: Arceus</h4></a>
+                        </div>
+                        <div class="cart-quantity">
+                            <p>x1</p>
+                        </div>
+
+                        <div class="cart-price">
+                            <p>$4.99</p>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="cart-object">
+                            <a href="#" class="text-link"><h4>Star Wars Jedi: Survivor</h4></a>
+                        </div>
+                        <div class="cart-quantity">
+                            <p>x1</p>
+                        </div>
+
+                        <div class="cart-price">
+                            <p>$4.99</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="calculation">
+                    <h3>Checkout</h3>
+                    <div class="subtotal">
+                        <h4>Subtotal:</h4>
+                        <p>$14.97</p>
+                        <h4>Shipping:</h4>
+                        <p>$2.50</p>
+                        <h4>GST/HST:</h4>
+                        <p>$2.27</p>
+                    </div>
+
+                    <div class="total">
+                        <h4>Total:</h4>
+                        <p>$19.74</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="element">
+            <div class="payment-form">
+                <div class="payment-form-item">
+                    <h3>Shipping Address</h3>
+                    <form>
+                        <label for="fname">Full Name</label><br>
+                        <input type="text" id="fname" name="fname" class="input-text" placeholder="John Smith"><br>
+                        <label for="email">Email</label><br>
+                        <input type="text" id="email" name="email" class="input-text" placeholder="johnsmith@email.com"><br>
+                        <label for="address">Address</label><br>
+                        <input type="text" id="address" name="address" class="input-text" placeholder="2222 Main Street"><br>
+                        <label for="city">City</label><br>
+                        <input type="text" id="city" name="city" class="input-text" placeholder="Vancouver"><br>
+                        <label for="state">State</label><br>
+                        <input type="text" id="state" name="state" class="input-text" placeholder="BC"><br>
+                        <label for="zipcode">Postal Code</label><br>
+                        <input type="text" id="zipcode" name="zipcode" class="input-text" placeholder="A1B 2C3"><br>
+                    </form>
+                </div>
+            
+                <div class="payment-form-item">
+                    <h3>Payment</h3>
+                    <form>
+                        <label for="cname">Name on Card</label><br>
+                        <input type="text" id="cname" name="cname" class="input-text" placeholder="John Smith"><br>
+                        <label for="cnumber">Card Number</label><br>
+                        <input type="text" id="cnumber" name="cnumber" class="input-text" placeholder="1234 5678 9101 2131"><br>
+                        <label for="expiry">Expiry Date</label><br>
+                        <input type="text" id="expiry" name="expiry" class="input-text" placeholder="2/25"><br>
+                        <label for="cvv">CVV</label><br>
+                        <input type="text" id="cvv" name="cvv" class="input-text" placeholder="123"><br>
+                        <input type="radio" id="billing" name="billing" class="input-radio">
+                        <label for="billing">Shipping address same as billing</label>
+                    </form>
+                </div>
+            </div>
+            <form>
+                <input type="submit" value="Pay Now" class="button-submit">
+            </form>
+        </section>
+
+        
+    </body>
+
+</html>

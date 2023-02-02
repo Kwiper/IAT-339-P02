@@ -1,0 +1,408 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+
+/* Accordion from https://www.w3schools.com/howto/howto_js_accordion.asp*/
+.accordion {
+  font-family: 'Manrope', sans-serif;
+  font-size:2rem;
+  color: #6f1919;
+  background-color: #9D4246;
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+}
+
+.accordion:after {
+  content: '\002B'; /* Unicode character for PLUS SIGN */
+  color: #fff;
+  stroke: none;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\002D"; /* Unicode character for MINUS SIGN */
+}
+
+
+.active, .accordion:hover {
+  background-color: #c7c7c7;
+}
+
+
+.panel {
+  display: none;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  transition: max-height 0.2s ease-out;
+}
+
+
+/* Text elements*/
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #0e0e0e;
+
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  color: #6f1919;
+}
+
+h2 {
+  font-family: 'Manrope', sans-serif;
+  font-size:2rem;
+  color: #6f1919;
+  margin-top: 1rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  /*margin-top: 1rem;*/
+}
+
+h4 {
+  font-size:1rem;
+  font-weight: bolder;
+}
+
+p {
+  margin-top: 0;
+}
+
+img{
+  max-width: 50%;
+  height:auto;
+}
+
+.element {
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: #6f1919;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
+code {
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+}
+
+.ordered-list{
+  list-style: none;
+  clear:both;
+  padding-left: 2%;
+}
+
+.ordered-list li{
+  margin-top: 2rem;
+
+  padding-top: 2rem;
+
+  display:block;
+  position: relative;
+  counter-increment: counter;
+}
+
+.ordered-list li::before{
+  content: counter(counter);
+  
+  background: #9D4246;
+  color: white;
+  
+  font-size: 2rem;
+  
+  border-radius: 2rem;
+  text-align: center;
+  
+  padding-top: 0;
+  padding-left: 0;
+
+  height: 2.75rem;
+  width: 2.75rem;
+
+  margin-top:-3rem;
+
+  position: absolute;
+}
+
+.console-logo{
+  width:10%;
+}
+
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+.button-nav{
+  display: inline-block;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  color: white;
+  background-color: #9D4246;
+  border-radius: 1rem;
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+}
+
+.button-nav:hover, .button-nav:focus, .button-nav:active, .button-submit:hover, .button-submit:focus, .button-submit:active, .button-reset:hover, .button-reset:focus, .button-reset:active{
+  background-color: #c7c7c7;
+}
+
+.text-link {
+  display: inline-block;
+  color: #9d4246;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 0.25s;
+}
+
+.text-link:active, .text-link:hover, .text-link:focus {
+  color:#0e0e0e;
+}
+
+.button-submit {
+  border: none;
+  font-size: 1rem;
+  display: inline-block;
+  padding: 0.75rem;
+  margin-top:1rem;
+  margin-bottom: 1rem;
+  color: white;
+  background-color: #9D4246;
+  border-radius: 1rem;
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+}
+
+.button-reset {
+  border: none;
+  font-size: 1rem;
+  display: inline-block;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  color: white;
+  background-color: #0e0e0e;
+  border-radius: 1rem;
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+}
+
+label{
+  font-size: 1rem;
+  font-weight: bold;
+  color:#6f1919;
+}
+
+.input-text{
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border: solid 2px;
+  border-radius: 0.25rem;
+  border-color: #6f1919;
+  transition-property: border-color;
+  transition-duration: 0.25s;
+}
+
+.input-text:hover, .input-text:focus{
+  border-width: 2px;
+  border-radius: 0.25rem;
+  border-color: #c7c7c7;
+}
+
+.input-text:active{
+  border-color: #0e0e0e;
+}
+
+.input-radio{
+  background-color:#9D4246;
+  
+  transition-property: background-color;
+  transition-duration: 0.25s;
+}
+
+.input-radio:hover, .input-radio:focus{
+  background-color: #c7c7c7;
+}
+
+.input-radio:active{
+  background-color: #6f1919;
+}
+
+.img-link{
+  max-width: 25%;
+  height:auto;
+  border-radius: 2rem;
+  border: white solid 5px;
+  transition-property: border;
+  transition-duration: 0.25s;
+}
+
+.img-link:active, .img-link:hover, .img-link:focus{
+  border:#6f1919 solid 5px;
+}
+
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+.manrope{
+  font-family: 'Manrope', sans-serif;
+}
+
+.montserrat{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.open-sans{
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+
+.product-container{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.product-listing{
+  margin-top: 2rem;
+  flex:1 1 30rem;
+}
+
+.payment-form{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.checkout{
+  display:flex;
+  gap: 5rem;
+  padding-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.cart{
+  flex:2;
+  padding-left: 1rem;
+  background-color: #c7c7c7;
+  border-radius: 1rem;
+
+  display:flex;
+  flex-direction: column;
+}
+
+.cart-item{
+  display:flex;
+  flex-direction: row;
+  gap:5rem;
+}
+
+.cart-header{
+  display:flex;
+  flex-direction:row;
+}
+
+.cart-header-item{
+  flex:1;
+}
+
+.cart-object{
+  display:inline-block;
+  flex-wrap: wrap;
+  flex:1;
+}
+
+.cart-quantity{
+  display:inline-block;
+  margin-top: 1.25rem;
+  flex:1;
+}
+
+.cart-price{
+  display:inline-block;
+  margin-top: 1.25rem;
+  flex:2;
+}
+
+.calculation{
+  flex:2;
+}
+
+.image-container{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.game-covers{
+  display:flex;
+  flex-direction: row;
+  flex-basis: content;
+}
+
+.game-cover-item-1{
+  flex:1;
+}
+
+.game-cover-item-2{
+  flex:1;
+}
+
+.game-cover-item-3{
+  flex:1;
+}
+
+.console-icons{
+  display:flex;
+  flex-direction: row;
+}
+
+.console-icon-1{
+  flex: 1;
+}
+
+.console-icon-2{
+  flex:1;
+}
+
+.console-icon-3{
+  flex:1;
+}
+
+.console-icon-4{
+  flex: 1;
+}
+
+@media (min-width:80rem) {
+
+  body{
+      margin: 3rem 25rem;
+  }
+
+}
