@@ -7,8 +7,7 @@
 .accordion {
   font-family: 'Manrope', sans-serif;
   font-size:2rem;
-  color: #6f1919;
-  background-color: #9D4246;
+  background-color: black;
   color: #fff;
   cursor: pointer;
   padding: 18px;
@@ -17,7 +16,6 @@
   border: none;
   outline: none;
   transition: 0.4s;
-  border-radius: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -35,7 +33,7 @@
 
 
 .active, .accordion:hover {
-  background-color: #c7c7c7;
+  background-color: rgb(50,50,50);
 }
 
 
@@ -50,38 +48,43 @@
 /* Text elements*/
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
+  padding: 2rem;
   color: #0e0e0e;
 
 }
 
 h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 3.5rem;
-  margin-bottom: 2rem;
-  color: #6f1919;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3rem;
+  margin-top: 2rem;
 }
 
 h2 {
   font-family: 'Manrope', sans-serif;
-  font-size:2rem;
-  color: #6f1919;
+  font-weight: bold;
   margin-top: 1rem;
 }
 
 h3 {
-  font-size: 1.5rem;
-  /*margin-top: 1rem;*/
+  background-color: black;
+  padding: 1rem;
+  color: white;
+  font-family: 'Manrope', sans-serif;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 h4 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: lighter;
   font-size:1rem;
-  font-weight: bolder;
+  margin-bottom: 0.5rem;
 }
 
 p {
-  margin-top: 0;
+  font-family: 'Manrope', sans-serif;
+  margin-top: 0.5rem;
 }
 
 img{
@@ -93,7 +96,14 @@ img{
   padding-bottom: 2rem;
   border-top-width: 0.15rem;
   border-top-style: solid;
-  border-top-color: #6f1919;
+  border-top-color: black;
+}
+
+nav{
+  display: block;
+  background-color: black;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
 }
 
 nav a:hover, nav a:focus {
@@ -125,12 +135,11 @@ code {
 .ordered-list li::before{
   content: counter(counter);
   
-  background: #9D4246;
+  background: black;
   color: white;
   
   font-size: 2rem;
   
-  border-radius: 2rem;
   text-align: center;
   
   padding-top: 0;
@@ -154,114 +163,116 @@ code {
 */
 
 .button-nav{
+  font-family: 'Manrope', sans-serif;
+  font-weight: bold;
   display: inline-block;
-  padding: 0.75rem;
-  margin-bottom: 1rem;
+  padding: 1rem;
   color: white;
-  background-color: #9D4246;
-  border-radius: 1rem;
+  background-color:black;
   text-decoration: none;
-  transition-property: background-color; 
+  transition-property: background-color, color; 
   transition-duration: 0.5s;
 }
 
-.button-nav:hover, .button-nav:focus, .button-nav:active, .button-submit:hover, .button-submit:focus, .button-submit:active, .button-reset:hover, .button-reset:focus, .button-reset:active{
-  background-color: #c7c7c7;
-}
-
-.text-link {
-  display: inline-block;
-  color: #9d4246;
-  text-decoration: none;
-  transition-property: color;
-  transition-duration: 0.25s;
-}
-
-.text-link:active, .text-link:hover, .text-link:focus {
-  color:#0e0e0e;
+.button-nav:hover, .button-nav:focus, .button-nav:active{
+  color: rgb(110,150,240);
+  background-color: rgb(50,50,50);
 }
 
 .button-submit {
+  font-family: 'Manrope', sans-serif;
+  font-weight: bold;
   border: none;
-  font-size: 1rem;
   display: inline-block;
-  padding: 0.75rem;
-  margin-top:1rem;
-  margin-bottom: 1rem;
+  padding: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   color: white;
-  background-color: #9D4246;
-  border-radius: 1rem;
+  background-color:black;
   text-decoration: none;
   transition-property: background-color; 
   transition-duration: 0.5s;
 }
 
 .button-reset {
+  font-family: 'Manrope', sans-serif;
+  font-weight: bold;
   border: none;
-  font-size: 1rem;
   display: inline-block;
-  padding: 0.75rem;
-  margin-bottom: 1rem;
+  padding: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   color: white;
-  background-color: #0e0e0e;
-  border-radius: 1rem;
+  background-color:rgb(50,50,50);
   text-decoration: none;
   transition-property: background-color; 
   transition-duration: 0.5s;
 }
 
+
+.button-submit:hover, .button-submit:focus, .button-submit:active, .button-reset:hover, .button-reset:focus, .button-reset:active{
+  background-color: rgb(110,150,240);
+}
+
+.text-link {
+  display: inline-block;
+  color: rgb(110,150,240);
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 0.25s;
+}
+
+.text-link:active, .text-link:hover, .text-link:focus {
+  color:black;
+}
+
+
 label{
   font-size: 1rem;
   font-weight: bold;
-  color:#6f1919;
+  color:black;
 }
 
 .input-text{
   font-size: 1rem;
   margin-bottom: 1rem;
   border: solid 2px;
-  border-radius: 0.25rem;
-  border-color: #6f1919;
+  border-color: black;
   transition-property: border-color;
   transition-duration: 0.25s;
 }
 
 .input-text:hover, .input-text:focus{
   border-width: 2px;
-  border-radius: 0.25rem;
-  border-color: #c7c7c7;
+  border-color: rgb(110,150,240);
 }
 
 .input-text:active{
-  border-color: #0e0e0e;
+  border-color: rgb(110,150,240);
 }
 
 .input-radio{
-  background-color:#9D4246;
-  
   transition-property: background-color;
   transition-duration: 0.25s;
 }
 
 .input-radio:hover, .input-radio:focus{
-  background-color: #c7c7c7;
+  background-color: rgb(110,150,240);
 }
 
 .input-radio:active{
-  background-color: #6f1919;
+  background-color: rgb(110,150,240);
 }
 
 .img-link{
-  max-width: 25%;
   height:auto;
-  border-radius: 2rem;
   border: white solid 5px;
   transition-property: border;
   transition-duration: 0.25s;
 }
 
 .img-link:active, .img-link:hover, .img-link:focus{
-  border:#6f1919 solid 5px;
+  border:black solid 5px;
 }
 
 
@@ -285,14 +296,24 @@ label{
 */
 
 .product-container{
-  display:flex;
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  flex-direction: row;
+  background-color: black;
+  padding: 2rem;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .product-listing{
-  margin-top: 2rem;
-  flex:1 1 30rem;
+  margin:2rem;
+  padding:1rem;
+  width:fit-content;
+  box-shadow: -5px 5px rgb(110,150,240);
+  background-color: white;
+  text-align:center;
 }
 
 .payment-form{
@@ -311,8 +332,6 @@ label{
 .cart{
   flex:2;
   padding-left: 1rem;
-  background-color: #c7c7c7;
-  border-radius: 1rem;
 
   display:flex;
   flex-direction: column;
@@ -336,7 +355,7 @@ label{
 .cart-object{
   display:inline-block;
   flex-wrap: wrap;
-  flex:1;
+  flex:1.75;
 }
 
 .cart-quantity{
@@ -402,7 +421,7 @@ label{
 @media (min-width:80rem) {
 
   body{
-      margin: 3rem 25rem;
+      margin: 3rem 10rem;
   }
 
 }
