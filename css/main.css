@@ -390,6 +390,23 @@ label{
   flex:2;
 }
 
+
+.footer{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: black;
+  padding: 2rem;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer h3{
+  font-weight: lighter;
+}
+
 .image-container{
   display:flex;
   flex-wrap: wrap;
