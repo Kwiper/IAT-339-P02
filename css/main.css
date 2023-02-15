@@ -539,6 +539,27 @@ label{
     display:block;
 }
 
+.product-details{
+  display:flex;
+  flex-direction:row;
+  margin-top:3rem;
+  flex-wrap:wrap;
+}
+
+.product-details-content{
+  padding:3rem;
+  display:inline-block;
+  flex-basis:20em;
+  flex-grow:1;
+}
+
+.product-details-image{
+  background-color:black;
+  padding-left:17.5%;
+  flex-basis:25em;
+  flex-grow:1;
+}
+
 @media (min-width:80rem) {
 
   body{
