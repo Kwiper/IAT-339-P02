@@ -568,6 +568,33 @@ label{
   flex-grow:1;
 }
 
+.specs{
+  background: black;
+  align-items: center;
+  padding: 0rem 10rem 4rem 10rem;
+}
+
+.spec-left{
+  color: white;
+  text-align: left;
+  padding: 1rem 5rem 1rem 1rem;
+}
+
+.spec-right{
+  color:white;
+  text-align: left;
+  padding: 1rem 25rem 1rem 5rem;
+}
+
+table{
+  width: 100%;
+}
+
+th,tr{
+  color: #eaf4fc;
+  border-bottom: 0.1rem solid white;
+}
+
 @media (min-width:80rem) {
 
   body{
