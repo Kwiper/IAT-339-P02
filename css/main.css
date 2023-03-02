@@ -545,6 +545,8 @@ label{
 .mainpage-feature-image img{
     margin: auto;
     display:block;
+    min-height: 20em;
+    min-width: 25em;
 }
 
 .product-details{
