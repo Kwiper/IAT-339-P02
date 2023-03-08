@@ -22,7 +22,6 @@
             <p>A reference guide dictating the style and interaction of the company site</p>
 
             <nav>
-                <a href="#" class="button-nav">Index</a>
                 <a href="homepage.html" class="button-nav">Home Page</a>
                 <a href="collections_list.html" class="button-nav">Collections</a>
                 <a href="product_page.html" class="button-nav">Product Listing</a>
@@ -505,32 +504,94 @@
                 <h4>Sample code:</h4>
                 <code>
                     &lt;div class="footer"&gt;<br>
-                    &lt;h3&gt;ChronoLux | 1812 Commercial Dr. | Vancouver, BC | (604) 251-7287 | info@chronolux.com&lt;/h3&gt;<br>
+                    &lt;h3&gt;ChronoLux | 1812 Commercial Dr. | Vancouver, BC | (604) 251-7287 | info@chronolux.com | &lt;a href="styleguide.html" class="style-link"&gt;Style Guide&lt;/a&gt;&lt;/h3&gt;<br>
                     &lt;/div&gt;
                 </code>
 
                 <h4>Rendered Element</h4>
                 <div class="footer">
-                    <h3>ChronoLux | 1812 Commercial Dr. | Vancouver, BC | (604) 251-7287 | info@chronolux.com </h3>
+                    <h3>ChronoLux | 1812 Commercial Dr. | Vancouver, BC | (604) 251-7287 | info@chronolux.com | <a href="styleguide.html" class="style-link">Style Guide</a></h3>
                 </div>
             </section>
 
-        </div>
+            <section class="element">
+                <h3>Specifications table</h3>
 
-        <button class="accordion">Company Branding</button>
-        <div class="panel">
-            <section class="element">
-                <h3>Company pitch</h3>
-            
-            </section>
-            <section class="element">
-                <h3>Customer Personas</h3>
+                <h4>CSS selector:</h4>
+                <p>.specs</p>
+
+                <h4>Sample code:</h4>
+                <code>
+                    &lt;section class="specs"&gt;<br>
+                        &lt;h3&gt;Specifications&lt;/h3&gt;<br>
+                        &lt;table aria-label="Description of the watches' specifications, measurements, features."&gt;<br>
+                            &lt;tbody&gt;<br>
+                                &lt;tr&gt;<br>
+                                    <!--Table left-->
+                                    &lt;th class="spec-left"&gt;Movement Type:&lt;/th&gt;<br>
+                                    <!--Table right-->
+                                    &lt;th class="spec-right"&gt;Automatic with manual winding&lt;/th&gt;<br>
+                                &lt;/tr&gt;<br>
+                                &lt;tr&gt;<br>
+                                    &lt;th class="spec-left"&gt;Precision:&lt;/th&gt;<br>
+                                    &lt;th class="spec-right"&gt;+25 to -12 seconds per day&lt;/th&gt;<br>
+                                &lt;/tr&gt;<br>
+                                &lt;tr&gt;<br>
+                                    &lt;th class="spec-left"&gt;Battery Life:&lt;/th&gt;<br>
+                                    &lt;th class="spec-right"&gt;Approx. 70 hours&lt;/th&gt;<br>
+                                &lt;/tr&gt;<br>
+                                &lt;tr&gt;<br>
+                                    &lt;th class="spec-left"&gt;Case Material:&lt;/th&gt;<br>
+                                    &lt;th class="spec-right"&gt;Stainless steel&lt;/th&gt;<br>
+                                &lt;/tr&gt;<br>
+                                &lt;tr&gt;<br>
+                                    &lt;th class="spec-left"&gt;Case Size:&lt;/th&gt;<br>
+                                    &lt;th class="spec-right"&gt;Thickness: 13.3mm&lt;br&gt;Diameter: 31.5mm&lt;br&gt;Lug-to-lug: 43.2mm&lt;/th&gt;<br>
+                                &lt;/tr&gt;<br>
+                                &lt;tr&gt;<br>
+                                    &lt;th class="spec-left"&gt;Distance between lugs:&lt;/th&gt;<br>
+                                    &lt;th class="spec-right"&gt;20&lt;/th&gt;<br>
+                                &lt;/tr&gt;<br>
+                        &lt;/table&gt;<br>
+                    &lt;/section&gt;<br>
+                </code>
+
+                <h4>Rendered Element</h4>
+                <section class="specs">
+                    <h3>Specifications</h3>
+                    <table aria-label="Description of the watches' specifications, measurements, features.">
+                        <tbody>
+                            <tr>
+                                <!--Table left-->
+                                <th class="spec-left">Movement Type:</th>
+                                <!--Table right-->
+                                <th class="spec-right">Automatic with manual winding</th>
+                            </tr>
+                            <tr>
+                                <th class="spec-left">Precision:</th>
+                                <th class="spec-right">+25 to -12 seconds per day</th>
+                            </tr>
+                            <tr>
+                                <th class="spec-left">Battery Life:</th>
+                                <th class="spec-right">Approx. 70 hours</th>
+                            </tr>
+                            <tr>
+                                <th class="spec-left">Case Material:</th>
+                                <th class="spec-right">Stainless steel</th>
+                            </tr>
+                            <tr>
+                                <th class="spec-left">Case Size:</th>
+                                <th class="spec-right">Thickness: 13.3mm<br>Diameter: 31.5mm<br>Lug-to-lug: 43.2mm</th>
+                            </tr>
+                            <tr>
+                                <th class="spec-left">Distance between lugs:</th>
+                                <th class="spec-right">20</th>
+                            </tr>
+                    </table>
+                </section>
 
             </section>
             
-            <section class="element">
-                <h3>Brand Perception</h3>
-            </section>
         </div>
 
         <button class="accordion">Brand Identity</button>
@@ -550,14 +611,37 @@
             <section class="element">
                 <h3>Colour Palette</h3>
                 <div class="image-container">
-
+                    <img src="img/palette_black.png">
+                    <img src="img/palette_white.png">
+                    <img src="img/palette_darkgray.png">
+                    <img src="img/palette_cornflowerblue.png">
                 </div>
                 
+                <h4>Black</h4>
+                <p>Text, interactable elements default state</p>
+
+                <h4>White</h4>
+                <p>Interactable element text colour</p>
+
+                <h4>Dark Gray</h4>
+                <p>Interactable element hover state colour</p>
+
+                <h4>Cornflower Blue</h4>
+                <p>Interactable element hover state text colour and in-text link colour</p>
+
             </section>
 
             <section class="element">
                 <h3>Imagery</h3>
-
+                <div class="image-container">
+                    <img src="img/classic-black.png">
+                    <img src="img/signature-black.png">
+                    <img src="img/feature1.png">
+                    <img src="img/feature2.png">
+                    <img src="img/feature3.png">
+                    <img src="img/feature4.png">
+                    <img src="img/feature5.png">
+                </div>
             </section>
         </div>
 

@@ -425,45 +425,11 @@ label{
 .image-container{
   display:flex;
   flex-wrap: wrap;
-}
-
-.game-covers{
-  display:flex;
   flex-direction: row;
-  flex-basis: content;
-}
+  height:auto;
+  width:50vw;
+  justify-content: center;
 
-.game-cover-item-1{
-  flex:1;
-}
-
-.game-cover-item-2{
-  flex:1;
-}
-
-.game-cover-item-3{
-  flex:1;
-}
-
-.console-icons{
-  display:flex;
-  flex-direction: row;
-}
-
-.console-icon-1{
-  flex: 1;
-}
-
-.console-icon-2{
-  flex:1;
-}
-
-.console-icon-3{
-  flex:1;
-}
-
-.console-icon-4{
-  flex: 1;
 }
 
 .hero {
