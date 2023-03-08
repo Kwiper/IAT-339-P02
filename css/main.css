@@ -245,6 +245,17 @@ code {
   color:black;
 }
 
+.style-link{
+  display: inline-block;
+  color:white;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 0.25s;
+}
+
+.style-link:active, .style-link:hover, .style-link:focus {
+  color:rgb(110,150,240);
+}
 
 label{
   font-size: 1rem;
