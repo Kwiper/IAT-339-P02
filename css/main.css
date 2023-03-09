@@ -60,12 +60,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Manrope', sans-serif;
-  font-weight: bold;
-  margin-top: 1rem;
-}
 
-h3 {
   background-color: black;
   padding: 1rem;
   color: white;
@@ -73,6 +68,12 @@ h3 {
   font-weight: bold;
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+h3 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: bold;
+  margin-top: 1rem;
 }
 
 h4 {
@@ -111,6 +112,19 @@ nav{
 
 nav a:hover, nav a:focus {
   text-decoration: none;
+}
+
+.nav-main{
+  display: block;
+  background-color: black;
+  padding-left: 1rem;
+  width:100vw;
+  margin-bottom:2rem;
+  z-index:1;
+}
+
+.nav-main a:hover, .nav-main a:focus {
+text-decoration: none;
 }
 
 code {
@@ -411,6 +425,7 @@ label{
   justify-content: center;
   flex-wrap: wrap;
   background-color: black;
+  color:white;
   padding: 2rem;
   padding-left: 10%;
   padding-right: 10%;
@@ -559,7 +574,7 @@ label{
   padding: 0rem 10rem 4rem 10rem;
 }
 
-.specs h4{
+.specs h1{
   font-family: 'Cormorant Garamond', serif;
   font-size: 4rem;
   padding-top: 2rem;

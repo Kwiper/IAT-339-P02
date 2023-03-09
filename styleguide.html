@@ -25,7 +25,6 @@
                 <a href="homepage.html" class="button-nav">Home Page</a>
                 <a href="collections_list.html" class="button-nav">Collections</a>
                 <a href="product_page.html" class="button-nav">Product Listing</a>
-                <a href="checkout_page.html" class="button-nav">Checkout</a>
             </nav>
         </header>
 
@@ -33,7 +32,7 @@
         <div class="panel">
             <!--In-text link-->
             <section class="element">
-                <h3>In-text link</h3>
+                <h2>In-text link</h2>
 
                 <h4>CSS selector:</h4>
                 <p>.text-link</p>
@@ -47,7 +46,7 @@
 
             <!--Navigation link-->
             <section class="element">
-                <h3>Navigation link</h3>
+                <h2>Navigation link</h2>
 
                 <h4>CSS selector:</h4>
                 <p>.button-nav</p>
@@ -62,7 +61,7 @@
             <!--Submit button-->
             <!--From: https://www.w3schools.com/html/html_forms.asp-->
             <section class="element">
-                <h3>Submit button</h3>
+                <h2>Submit button</h2>
 
                 <h4>CSS selector:</h4>
                 <p>.button-submit</p>
@@ -82,7 +81,7 @@
 
             <!--Reset button-->
             <section class="element">
-                <h3>Reset button</h3>
+                <h2>Reset button</h2>
 
                 <h4>CSS selector:</h4>
                 <p>.button-reset</p>
@@ -102,7 +101,7 @@
 
             <!--Text input field and label-->
             <section class="element">
-                <h3>Text input and label</h3>
+                <h2>Text input and label</h2>
 
                 <h4>CSS selector:</h4>
                 <p>.input-text</p>
@@ -124,7 +123,7 @@
 
             <!--Radio input and label-->
             <section class="element">
-                <h3>Radio input and label</h3>
+                <h2>Radio input and label</h2>
 
                 <h4>CSS selector:</h4>
                 <p>.input-radio</p>
@@ -147,7 +146,7 @@
 
             <!-- Image as a link-->
             <section class="element">
-                <h3>Image as a link</h3>
+                <h2>Image as a link</h2>
 
                 <h4>CSS selector:</h4>
                 <p>.img-link</p>
@@ -165,7 +164,7 @@
         <button class="accordion">Text Elements</button>
         <div class="panel">
             <section class="element">
-                <h3>Headings</h3>
+                <h2>Headings</h2>
 
                 <h4>Sample code:</h4>
                 <code>
@@ -183,7 +182,7 @@
             </section>
 
             <section class="element">
-                <h3>Paragraphs</h3>
+                <h2>Paragraphs</h2>
 
                 <h4>Sample code:</h4>
                 <code>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;</code>
@@ -194,7 +193,7 @@
 
             <section class="element">
                 <!--Custom number styling based on https://css-tricks.com/css-counters-custom-list-number-styling/-->
-                <h3>Numbered Lists</h3>
+                <h2>Numbered Lists</h2>
 
                 <h4>CSS selector:</h4>
                 <p>.ordered-list</p>
@@ -221,62 +220,74 @@
         <button class="accordion">Combined Elements</button>
         <div class="panel">
             <section class="element">
-                <h3>Main navigation</h3>
+                <h2>Main navigation</h2>
 
                 <h4>CSS selector:</h4>
-                <p>.nav-main</p>
+                <p>nav</p>
 
                 <h4>Sample code:</h4>
                 <code>
-                    &lt;nav class="nav-main"&gt;<br>
-                    &lt;a class="button-nav" href="#"&gt;Home&lt;/a&gt;<br>
-                    &lt;a class="button-nav" href="#"&gt;About&lt;/a&gt;<br>
-                    &lt;a class="button-nav" href="#"&gt;Contact&lt;/a&gt;<br>
+                    &lt;nav&gt;<br>
+                    &lt;a href="homepage.html" class="button-nav"&gt;Home Page&lt;/a&gt;<br>
+                    &lt;a href="collections_list.html" class="button-nav"&gt;Collections&lt;/a&gt;<br>
+                    &lt;a href="product_page.html" class="button-nav"&gt;Product Listing&lt;/a&gt;<br>
                     &lt;/nav&gt;
                 </code>
 
                 <h4>Rendered element:</h4>
-                <nav class="nav-main">
-                    <a class="button-nav" href="#">Home</a>
-                    <a class="button-nav" href="#">About</a>
-                    <a class="button-nav" href="#">Contact</a>
-                </nav>
+                <div class="nav-main">
+                    <a href="homepage.html" class="button-nav">Home Page</a>
+                    <a href="collections_list.html" class="button-nav">Collections</a>
+                    <a href="product_page.html" class="button-nav">Product Listing</a>
+                </div class="nav-main">
             </section>
 
             <section class="element">
-                <h3>Product listing</h3>
+                <h2>Product listing</h2>
 
                 <h4>CSS selector:</h4>
                 <p>.product-listing</p>
 
                 <h4>Sample code:</h4>
                 <code>
-                    &gt;div class="product-listing"&gt;<br>
-                        &gt;a href="#"&gt;&gt;img src="img/doom_eternal.jpg" alt="Test image" class="img-link"&gt;&gt;/a&gt;<br>
-                        &gt;h3&gt;Doom Eternal&gt;/h3&gt;<br>
-                        &gt;img src="img/PlayStation_4_logo_and_wordmark.png" alt="PS4 logo" class="console-logo"&gt;<br>
-                        &gt;p&gt;An example product that will be displayed.&gt;/p&gt;<br>
-                        &gt;h4&gt;$4.99&gt;/h4&gt;<br>
-                        &gt;h4&gt;&gt;a href="#" class="text-link"&gt;Rent Now &gt&lt;&gt;/a&gt;&gt;/h4&gt;<br>
-                    &gt;/div&gt;<br>
+                    &lt;div class="product-container"&gt;<br>
+                        &lt;div class="product-listing"&gt;<br>
+                            &lt;h3&gt;Watch Style 1&lt;/h3&gt;<br>
+                            &lt;a href="#"&gt;&lt;img src="img/watch.png" width="200"class="img-link"&gt;&lt;/a&gt;<br>
+                            &lt;p&gt;$499.99&lt;/p&gt;<br>
+                            &lt;a href="#" class="text-link"&gt;More Details&lt;/a&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;div class="product-listing"&gt;<br>
+                            &lt;h3&gt;Watch Style 2&lt;/h3&gt;<br>
+                            &lt;a href="#"&gt;&lt;img src="img/watch.png" width="200" class="img-link"&gt;&lt;/a&gt;<br>
+                            &lt;p&gt;$499.99&lt;/p&gt;<br>
+                            &lt;a href="#" class="text-link"&gt;More Details&lt;/a&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;div class="product-listing"&gt;<br>
+                            &lt;h3&gt;Watch Style 3&lt;/h3&gt;<br>
+                            &lt;a href="#"&gt;&lt;img src="img/watch.png" width="200"class="img-link"&gt;&lt;/a&gt;<br>
+                            &lt;p&gt;$499.99&lt;/p&gt;<br>
+                            &lt;a href="#" class="text-link"&gt;More Details&lt;/a&gt;<br>
+                        &lt;/div&gt;<br>
+                    &lt;/div&gt;<br>
                 </code>
 
                 <h4>Rendered element:</h4>
                 <div class="product-container">
                     <div class="product-listing">
-                        <h2>Watch Style 1</h2>
+                        <h3>Watch Style 1</h3>
                         <a href="#"><img src="img/watch.png" width="200"class="img-link"></a>
                         <p>$499.99</p>
                         <a href="#" class="text-link">More Details</a>
                     </div>
                     <div class="product-listing">
-                        <h2>Watch Style 2</h2>
+                        <h3>Watch Style 2</h3>
                         <a href="#"><img src="img/watch.png" width="200" class="img-link"></a>
                         <p>$499.99</p>
                         <a href="#" class="text-link">More Details</a>
                     </div>
                     <div class="product-listing">
-                        <h2>Watch Style 3</h2>
+                        <h3>Watch Style 3</h3>
                         <a href="#"><img src="img/watch.png" width="200"class="img-link"></a>
                         <p>$499.99</p>
                         <a href="#" class="text-link">More Details</a>
@@ -285,7 +296,7 @@
             </section>
 
             <section class="element">
-                <h3>Payment Form</h3>
+                <h2>Payment Form</h2>
 
                 <h4>CSS selector:</h4>
                 <p>.payment-form</p>
@@ -294,9 +305,9 @@
                 <code>
                     &lt;div class="payment-form"&gt;<br>
                         &lt;div class="payment-form-item"&gt;<br>
-                            &lt;h3&gt;Shipping Address&lt;/h3&gt;<br>
+                            &lt;h2&gt;Shipping Address&lt;/h2&gt;<br>
                             &lt;form&gt;<br>
-                                &lt;label for="fname"&gt;Full Name&lt;/label>&lt;br&gt;<br>
+                                &lt;label for="fname"&gt;Full Name&lt;/label&gt;&lt;br&gt;<br>
                                 &lt;input type="text" id="fname" name="fname" class="input-text" placeholder="John Smith"&gt;&lt;br&gt;<br>
                                 &lt;label for="email"&gt;Email&lt;/label&gt;&lt;br&gt;<br>
                                 &lt;input type="text" id="email" name="email" class="input-text" placeholder="johnsmith@email.com"&gt;&lt;br&gt;<br>
@@ -312,7 +323,7 @@
                         &lt;/div&gt;<br>
                     <br>
                         &lt;div class="payment-form-item"&gt;<br>
-                            &lt;h3&gt;Payment&lt;/h3&gt;<br>
+                            &lt;h2&gt;Payment&lt;/h2&gt;<br>
                             &lt;form&gt;<br>
                                 &lt;label for="cname"&gt;Name on Card&lt;/label&gt;&lt;br&gt;<br>
                                 &lt;input type="text" id="cname" name="cname" class="input-text" placeholder="John Smith"&gt;&lt;br&gt;<br>
@@ -320,7 +331,7 @@
                                 &lt;input type="text" id="cnumber" name="cnumber" class="input-text" placeholder="1234 5678 9101 2131"&gt;&lt;br&gt;<br>
                                 &lt;label for="expiry"&gt;Expiry Date&lt;/label&gt;&lt;br&gt;<br>
                                 &lt;input type="text" id="expiry" name="expiry" class="input-text" placeholder="2/25"&gt;&lt;br&gt;<br>
-                                &lt;label for="cvv"&gt;CVV&lt;/label>&lt;br&gt;<br>
+                                &lt;label for="cvv"&gt;CVV&lt;/label&gt;&lt;br&gt;<br>
                                 &lt;input type="text" id="cvv" name="cvv" class="input-text" placeholder="123"&gt;&lt;br&gt;<br>
                                 &lt;input type="radio" id="billing" name="billing" class="input-radio"&gt;<br>
                                 &lt;label for="billing"&gt;Shipping address same as billing&lt;/label&gt;<br>
@@ -336,7 +347,7 @@
 
                 <div class="payment-form">
                     <div class="payment-form-item">
-                        <h3>Shipping Address</h3>
+                        <h2>Shipping Address</h2>
                         <form>
                             <label for="fname">Full Name</label><br>
                             <input type="text" id="fname" name="fname" class="input-text" placeholder="John Smith"><br>
@@ -354,7 +365,7 @@
                     </div>
                 
                     <div class="payment-form-item">
-                        <h3>Payment</h3>
+                        <h2>Payment</h2>
                         <form>
                             <label for="cname">Name on Card</label><br>
                             <input type="text" id="cname" name="cname" class="input-text" placeholder="John Smith"><br>
@@ -375,7 +386,7 @@
             </section>
 
             <section class="element">
-                <h3>Checkout cart</h3>
+                <h2>Checkout cart</h2>
 
                 <h4>CSS selector:</h4>
                 <p>.checkout</p>
@@ -383,7 +394,7 @@
                 <h4>Sample code:</h4>
                 <code>
                     &lt;div class="checkout"&gt;<br>
-                        &lt;h3&gt;Cart&lt;/h3&gt;<br>
+                        &lt;h2&gt;Cart&lt;/h2&gt;<br>
                         &lt;div class="cart-header"&gt;
                             &lt;h4 class="cart-header-item"&gt;Item&lt;/h4&gt;<br>
                             &lt;h4 class="cart-header-item"&gt;Quantity&lt;/h4&gt;<br>
@@ -404,7 +415,9 @@
                             &lt;p&gt;x1&lt;/p&gt;<br>
                             &lt;p&gt;$4.99&lt;/p&gt;<br>
                         &lt;/div&gt;<br>
-    
+
+                    &lt;div class="calculation"&gt;
+                        &lt;h2&gt;Checkout&lt;/h2&gt;
                         &lt;div class="subtotal"&gt;<br>
                             &lt;h4&gt;Subtotal:&lt;/h4&gt;<br>
                             &lt;p&gt;$14.97&lt;/p&gt;<br>
@@ -425,7 +438,7 @@
                 <!--Code based on https://www.w3schools.com/howto/howto_css_checkout_form.asp-->
                 <div class="checkout">
                     <div class="cart">
-                        <h3>Cart</h3><br>
+                        <h2>Cart</h2><br>
                         <div class="cart-header">
                             <h4 class="cart-header-item">Item</h4>
                             <h4 class="cart-header-item">Quantity</h4>
@@ -473,7 +486,7 @@
                     </div>
 
                     <div class="calculation">
-                        <h3>Checkout</h3>
+                        <h2>Checkout</h2>
                         <div class="subtotal">
                             <h4>Subtotal:</h4>
                             <p>$14.97</p>
@@ -496,7 +509,7 @@
             </section>
 
             <section class="element">
-                <h3>Footer</h3>
+                <h2>Footer</h2>
 
                 <h4>CSS selector:</h4>
                 <p>.footer</p>
@@ -504,18 +517,18 @@
                 <h4>Sample code:</h4>
                 <code>
                     &lt;div class="footer"&gt;<br>
-                    &lt;h3&gt;ChronoLux | 1812 Commercial Dr. | Vancouver, BC | (604) 251-7287 | info@chronolux.com | &lt;a href="styleguide.html" class="style-link"&gt;Style Guide&lt;/a&gt;&lt;/h3&gt;<br>
+                    &lt;h4&gt;ChronoLux | 1812 Commercial Dr. | Vancouver, BC | (604) 251-7287 | info@chronolux.com | &lt;a href="styleguide.html" class="style-link"&gt;Style Guide&lt;/a&gt;&lt;/h4&gt;<br>
                     &lt;/div&gt;
                 </code>
 
                 <h4>Rendered Element</h4>
                 <div class="footer">
-                    <h3>ChronoLux | 1812 Commercial Dr. | Vancouver, BC | (604) 251-7287 | info@chronolux.com | <a href="styleguide.html" class="style-link">Style Guide</a></h3>
+                    <h4>ChronoLux | 1812 Commercial Dr. | Vancouver, BC | (604) 251-7287 | info@chronolux.com | <a href="styleguide.html" class="style-link">Style Guide</a></h4>
                 </div>
             </section>
 
             <section class="element">
-                <h3>Specifications table</h3>
+                <h2>Specifications table</h2>
 
                 <h4>CSS selector:</h4>
                 <p>.specs</p>
@@ -523,7 +536,7 @@
                 <h4>Sample code:</h4>
                 <code>
                     &lt;section class="specs"&gt;<br>
-                        &lt;h3&gt;Specifications&lt;/h3&gt;<br>
+                        &lt;h2&gt;Specifications&lt;/h2&gt;<br>
                         &lt;table aria-label="Description of the watches' specifications, measurements, features."&gt;<br>
                             &lt;tbody&gt;<br>
                                 &lt;tr&gt;<br>
@@ -558,7 +571,7 @@
 
                 <h4>Rendered Element</h4>
                 <section class="specs">
-                    <h3>Specifications</h3>
+                    <h2>Specifications</h2>
                     <table aria-label="Description of the watches' specifications, measurements, features.">
                         <tbody>
                             <tr>
@@ -597,7 +610,7 @@
         <button class="accordion">Brand Identity</button>
         <div class="panel">
             <section class="element">
-                <h3>Fonts</h3>
+                <h2>Fonts</h2>
                 
                 <h1>Cormorant Garamond</h1>
                 <p>Used for major page headings</p>
@@ -609,7 +622,7 @@
             </section>
 
             <section class="element">
-                <h3>Colour Palette</h3>
+                <h2>Colour Palette</h2>
                 <div class="image-container">
                     <img src="img/palette_black.png">
                     <img src="img/palette_white.png">
@@ -632,7 +645,7 @@
             </section>
 
             <section class="element">
-                <h3>Imagery</h3>
+                <h2>Imagery</h2>
                 <div class="image-container">
                     <img src="img/classic-black.png">
                     <img src="img/signature-black.png">
@@ -647,11 +660,11 @@
 
         <button class="accordion">Citations</button>
         <div class="panel">
-            <h3>Fonts</h3>
+            <h2>Fonts</h2>
             <p>Manrope font from <a href="https://fonts.google.com/specimen/Manrope" class="text-link">https://fonts.google.com/specimen/Manrope</a></p>
             <p>Cormorant Garamond font from <a href="https://fonts.google.com/specimen/Cormorant+Garamond?" class="text-link">https://fonts.google.com/specimen/Cormorant+Garamond?</a></p>
 
-            <h3>Code</h3>
+            <h2>Code</h2>
             <p>Accordion CSS and JavaScript code from <a href="https://www.w3schools.com/howto/howto_js_accordion.asp" class="text-link">https://www.w3schools.com/howto/howto_js_accordion.asp</a></p>
             <p>Submit and Reset Forms from <a href="https://www.w3schools.com/html/html_forms.asp" class="text-link">https://www.w3schools.com/html/html_forms.asp</a></p>
             <p>Radio Input from <a href="https://www.w3schools.com/tags/att_input_type_radio.asp" class="text-link">https://www.w3schools.com/tags/att_input_type_radio.asp</a></p>
