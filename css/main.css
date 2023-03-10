@@ -201,6 +201,12 @@ code {
   transition-duration: 0.5s;
 }
 
+.right-side-nav{
+    float:right;
+    text-align: right;
+    margin-right:3rem;
+}
+
 .button-nav:hover, .button-nav:focus, .button-nav:active{
   color: rgb(110,150,240);
   background-color: rgb(50,50,50);
@@ -451,6 +457,11 @@ label{
   font-weight: lighter;
 }
 
+.footer h4{
+  text-align: center;
+  margin: 0rem 2rem;
+}
+
 .image-container{
   display:flex;
   flex-wrap: wrap;
@@ -635,6 +646,14 @@ th,tr{
   .full-width{
       margin-left:-12rem;
       width:calc(100% + 24rem);
+  }
+
+}
+
+/* for when the nav-bar goes to multiple lines */
+@media (max-width:37rem) {
+  body{
+      margin-top:8rem;
   }
 
 }
