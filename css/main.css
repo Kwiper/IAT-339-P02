@@ -597,8 +597,7 @@ label{
 .specs{
   color:white;
   background: black;
-  justify-content: center;
-  padding: 0rem 10rem 4rem 10rem;
+  padding-bottom: 2rem;
 }
 
 .specs h1{
@@ -624,16 +623,20 @@ label{
 .spec-right{
   color:white;
   text-align: left;
-  padding: 1rem 25rem 1rem 5rem;
+  padding: 1rem 5rem 1rem 1rem;
 }
 
 table{
-  width: 100%;
+  min-width: 80vw;
 }
 
 th,tr{
   color: #eaf4fc;
   border-bottom: 0.1rem solid white;
+}
+
+textarea{
+  min-width: 25vw;
 }
 
 @media (min-width:80rem) {
